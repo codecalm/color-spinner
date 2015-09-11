@@ -1,8 +1,8 @@
 $dot-color: #79C3CD;
-$dot-size: 40px;
-$circle-size: 100px;
+$dot-size: 35px;
+$circle-size: 70px;
 
-$animation-time: 4s;
+$animation-time: 5s;
 
 $color-yellow: #FBD301;
 $color-red: #FF3270;
@@ -63,11 +63,11 @@ body {
 			transform: translateY(0);
 		}
 
-		12.5% {
+		20% {
 			transform: translateY(-($circle-size));
 		}
 
-		25% {
+		40%, 100% {
 			transform: translateY(0);
 		}
 	}
@@ -75,18 +75,22 @@ body {
 	@keyframes dot-colors {
 		@for $i from 0 to 4 {
 			#{$i*25%} {
-				background-color: nth($colors, $i+1);
+				background-color: nth($colors, ($i+3)%4+1);
 			}
+		}
+
+		100% {
+			background-color: nth($colors, 3);
 		}
 	}
 
 	&:nth-child(5):before {
 		z-index: 100;
-		width: $dot-size * 1.5;
-		height: $dot-size * 1.5;
-		margin-left: -($dot-size * .75);
-		margin-top: -($dot-size * .75);
-		animation: dot-colors $animation-time ease-in-out infinite;
+		width: $dot-size * 1.2;
+		height: $dot-size * 1.2;
+		margin-left: -($dot-size * .6);
+		margin-top: -($dot-size * .6);
+		animation: dot-colors $animation-time ease infinite;
 	}
 
 
@@ -94,20 +98,20 @@ body {
 	@for $i from 0 to 4 {
 		@keyframes dot-rotate-#{$i + 1} {
 			0% {
-				transform: rotate(#{($i+1)*270deg + 0deg});
+				transform: rotate(#{($i+1)*90deg - 90deg});
 			}
 
 			100% {
-				transform: rotate(#{($i+1)*270deg - 180deg});
+				transform: rotate(#{($i+1)*90deg - 270deg});
 			}
 		}
 
 		&:nth-child(#{$i + 1}) {
-			animation: dot-rotate-#{$i + 1} $animation-time #{$i * 1s} linear infinite;
+			animation: dot-rotate-#{$i + 1} $animation-time #{$i * $animation-time / 4} linear infinite;
 
 			&:before {
 				background-color: nth($colors, $i+1);
-				animation: dot-move $animation-time #{$i * 1s} ease-in-out infinite;
+				animation: dot-move $animation-time #{$i * $animation-time/4} ease infinite;
 			}
 		}
 	}
