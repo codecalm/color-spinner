@@ -51,7 +51,7 @@ body {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-  20% {
+  18%, 22% {
     -webkit-transform: translateY(-70px);
     transform: translateY(-70px);
   }
@@ -66,7 +66,7 @@ body {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-  20% {
+  18%, 22% {
     -webkit-transform: translateY(-70px);
     transform: translateY(-70px);
   }
@@ -78,178 +78,178 @@ body {
 
 @-webkit-keyframes dot-colors {
   0% {
-    background-color: #AFE102;
-  }
-  25% {
     background-color: #FBD301;
   }
-  50% {
+  25% {
     background-color: #FF3270;
   }
-  75% {
+  50% {
     background-color: #208BF1;
   }
+  75% {
+    background-color: #AFE102;
+  }
   100% {
-    background-color: #208BF1;
+    background-color: #FBD301;
   }
 }
 
 @keyframes dot-colors {
   0% {
-    background-color: #AFE102;
-  }
-  25% {
     background-color: #FBD301;
   }
-  50% {
+  25% {
     background-color: #FF3270;
   }
-  75% {
+  50% {
     background-color: #208BF1;
   }
+  75% {
+    background-color: #AFE102;
+  }
   100% {
-    background-color: #208BF1;
+    background-color: #FBD301;
   }
 }
 
 .dot:nth-child(5):before {
   z-index: 100;
-  width: 42px;
-  height: 42px;
-  margin-left: -21px;
-  margin-top: -21px;
-  -webkit-animation: dot-colors 5s ease infinite;
-  animation: dot-colors 5s ease infinite;
+  width: 45.5px;
+  height: 45.5px;
+  margin-left: -22.75px;
+  margin-top: -22.75px;
+  -webkit-animation: dot-colors 4s ease infinite;
+  animation: dot-colors 4s ease infinite;
 }
 
 @-webkit-keyframes dot-rotate-1 {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(-105deg);
+    transform: rotate(-105deg);
   }
   100% {
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
   }
 }
 
 @keyframes dot-rotate-1 {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(-105deg);
+    transform: rotate(-105deg);
   }
   100% {
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
   }
 }
 
 .dot:nth-child(1) {
-  -webkit-animation: dot-rotate-1 5s 0s linear infinite;
-  animation: dot-rotate-1 5s 0s linear infinite;
+  -webkit-animation: dot-rotate-1 4s 0s linear infinite;
+  animation: dot-rotate-1 4s 0s linear infinite;
 }
 
 .dot:nth-child(1):before {
-  background-color: #FBD301;
-  -webkit-animation: dot-move 5s 0s ease infinite;
-  animation: dot-move 5s 0s ease infinite;
+  background-color: #FF3270;
+  -webkit-animation: dot-move 4s 0s ease infinite;
+  animation: dot-move 4s 0s ease infinite;
 }
 
 @-webkit-keyframes dot-rotate-2 {
   0% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    -webkit-transform: rotate(165deg);
+    transform: rotate(165deg);
   }
   100% {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(540deg);
+    transform: rotate(540deg);
   }
 }
 
 @keyframes dot-rotate-2 {
   0% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    -webkit-transform: rotate(165deg);
+    transform: rotate(165deg);
   }
   100% {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(540deg);
+    transform: rotate(540deg);
   }
 }
 
 .dot:nth-child(2) {
-  -webkit-animation: dot-rotate-2 5s 1.25s linear infinite;
-  animation: dot-rotate-2 5s 1.25s linear infinite;
+  -webkit-animation: dot-rotate-2 4s 1s linear infinite;
+  animation: dot-rotate-2 4s 1s linear infinite;
 }
 
 .dot:nth-child(2):before {
-  background-color: #FF3270;
-  -webkit-animation: dot-move 5s 1.25s ease infinite;
-  animation: dot-move 5s 1.25s ease infinite;
+  background-color: #208BF1;
+  -webkit-animation: dot-move 4s 1s ease infinite;
+  animation: dot-move 4s 1s ease infinite;
 }
 
 @-webkit-keyframes dot-rotate-3 {
   0% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -webkit-transform: rotate(435deg);
+    transform: rotate(435deg);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(810deg);
+    transform: rotate(810deg);
   }
 }
 
 @keyframes dot-rotate-3 {
   0% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -webkit-transform: rotate(435deg);
+    transform: rotate(435deg);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(810deg);
+    transform: rotate(810deg);
   }
 }
 
 .dot:nth-child(3) {
-  -webkit-animation: dot-rotate-3 5s 2.5s linear infinite;
-  animation: dot-rotate-3 5s 2.5s linear infinite;
+  -webkit-animation: dot-rotate-3 4s 2s linear infinite;
+  animation: dot-rotate-3 4s 2s linear infinite;
 }
 
 .dot:nth-child(3):before {
-  background-color: #208BF1;
-  -webkit-animation: dot-move 5s 2.5s ease infinite;
-  animation: dot-move 5s 2.5s ease infinite;
+  background-color: #AFE102;
+  -webkit-animation: dot-move 4s 2s ease infinite;
+  animation: dot-move 4s 2s ease infinite;
 }
 
 @-webkit-keyframes dot-rotate-4 {
   0% {
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
+    -webkit-transform: rotate(705deg);
+    transform: rotate(705deg);
   }
   100% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    -webkit-transform: rotate(1080deg);
+    transform: rotate(1080deg);
   }
 }
 
 @keyframes dot-rotate-4 {
   0% {
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
+    -webkit-transform: rotate(705deg);
+    transform: rotate(705deg);
   }
   100% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    -webkit-transform: rotate(1080deg);
+    transform: rotate(1080deg);
   }
 }
 
 .dot:nth-child(4) {
-  -webkit-animation: dot-rotate-4 5s 3.75s linear infinite;
-  animation: dot-rotate-4 5s 3.75s linear infinite;
+  -webkit-animation: dot-rotate-4 4s 3s linear infinite;
+  animation: dot-rotate-4 4s 3s linear infinite;
 }
 
 .dot:nth-child(4):before {
-  background-color: #AFE102;
-  -webkit-animation: dot-move 5s 3.75s ease infinite;
-  animation: dot-move 5s 3.75s ease infinite;
+  background-color: #FBD301;
+  -webkit-animation: dot-move 4s 3s ease infinite;
+  animation: dot-move 4s 3s ease infinite;
 }
