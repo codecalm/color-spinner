@@ -1,0 +1,21 @@
+{
+  "name": "dots-loader",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codecalm/dots-loader.git"
+  },
+  "author": "codecalm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codecalm/dots-loader/issues"
+  },
+  "homepage": "https://github.com/codecalm/dots-loader",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-connect": "^2.2.0",
+    "gulp-sass": "^2.0.4"
+  }
+}
